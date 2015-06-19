@@ -77,8 +77,8 @@ var testWinConditions = function(){
 
 //Game resetter
 function res (){
-  if(moveCounter < 9 && victory === true){
-    alert('Good Game! resetting the board');
+  if(moveCounter === 9 && victory === false){
+    alert('Draw game, resetting the board');
     for(var i = 0; i < box.length; i++){
       box[i].innerHTML = "";
       box[i].value = undefined;
@@ -88,8 +88,8 @@ function res (){
     omove = [];
     victory = false;
     counter = 1;
-  }else if(moveCounter === 9 && victory === false){
-    alert('Draw game, resetting the board');
+  }else if(moveCounter < 9 && victory === true){
+    alert('Good Game! resetting the board');  
     for(var i = 0; i < box.length; i++){
       box[i].innerHTML = "";
       box[i].value = undefined;
