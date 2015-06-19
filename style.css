@@ -1,0 +1,84 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+body {
+  width: 90%;
+  height: 90%;
+}
+
+.container {
+  margin-left: 25%;
+}
+
+#one {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+#two {
+  width: 200px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  height: 200px;
+  float: left;
+}
+#three {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+#four {
+  width: 200px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  height: 200px;
+  float: left;
+}
+#five {
+  width: 200px;
+  border: 2px solid black;
+  height: 200px;
+  float: left;
+}
+#six {
+  width: 200px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  height: 200px;
+  float: left;
+}
+#seven {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+#eight {
+  width: 200px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  height: 200px;
+  float: left;
+}
+#nine {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
